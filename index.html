@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://cocodataset.org/#home -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>HBNU-MD - A Campus Face Mask Data Set</title>
+  <script type="text/javascript" async="" src="./COCO - Common Objects in Context_files/ga.js.下载"></script><script async="" src="./COCO - Common Objects in Context_files/analytics.js.下载"></script><script src="./COCO - Common Objects in Context_files/jquery.min.js.下载"></script>
+  <link rel="stylesheet" href="./COCO - Common Objects in Context_files/jquery-ui.css">
+  <script src="./COCO - Common Objects in Context_files/jquery-ui.min.js.下载"></script>
+  <link rel="stylesheet" href="./COCO - Common Objects in Context_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./COCO - Common Objects in Context_files/bootstrap-theme.min.css">
+  <script src="./COCO - Common Objects in Context_files/bootstrap.min.js.下载"></script>
+  <script src="./COCO - Common Objects in Context_files/jquery.dataTables.min.js.下载"></script>
+  <link rel="stylesheet" href="./COCO - Common Objects in Context_files/jquery.dataTables.min.css">
+  <script src="./COCO - Common Objects in Context_files/dataTables.buttons.min.js.下载"></script>
+  <script src="./COCO - Common Objects in Context_files/buttons.html5.min.js.下载"></script>
+  <script src="./COCO - Common Objects in Context_files/latest.js.下载"></script>
+  <script src="./COCO - Common Objects in Context_files/jszip.min.js.下载"></script>
+  <script src="./COCO - Common Objects in Context_files/pdfmake.min.js.下载"></script><script type="text/javascript" async="" src="./COCO - Common Objects in Context_files/MathJax.js.下载"></script>
+  <script src="./COCO - Common Objects in Context_files/vfs_fonts.js.下载"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style>
+  <link rel="stylesheet" href="./COCO - Common Objects in Context_files/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="./COCO - Common Objects in Context_files/cocostyles.css">
+  <script src="./COCO - Common Objects in Context_files/cocoscripts.js.下载"></script>
+  <script>googleAnalytics();</script>
+<style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body>
+  <script>$(function(){datasetTabNav()});</script>
+  <div id="header"><div id="headerBody">
+    <img id="headerImage" src="./COCO - Common Objects in Context_files/HBNU-logo.png" alt="Logo">
+    <div id="headerTabs">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <div class="nav-tab-header"></div>
+          <a data-toggle="tab" href="https://cocodataset.org/#home" aria-expanded="true">Home</a>
+        </li>
+        <li class="">
+          <div class="nav-tab-header"></div>
+          <a data-toggle="tab" href="https://cocodataset.org/#people" aria-expanded="false">People</a>
+        </li>
+        <li class="dropdown">
+          <div class="nav-tab-header"></div>
+          <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dataset<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class=""><a data-toggle="tab" href="https://cocodataset.org/#overview" aria-expanded="false"><i class="glyphicon glyphicon-info-sign"></i> Overview</a></li>
+            <li class=""><a data-toggle="tab" href="https://cocodataset.org/#explore" aria-expanded="false"><i class="glyphicon glyphicon-search"></i> Explore</a></li>
+            <li class=""><a data-toggle="tab" href="https://cocodataset.org/#download" aria-expanded="false"><i class="glyphicon glyphicon-download"></i> Download</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#external" aria-expanded="false"><i class="glyphicon glyphicon-cloud-download"></i> External</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#termsofuse" aria-expanded="false"><i class="glyphicon glyphicon-list-alt"></i> Terms of Use</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <div class="nav-tab-header"></div>
+          <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Tasks<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class=""><a data-toggle="tab" href="https://cocodataset.org/#detection-2020" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Detection 2020</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#keypoints-2020" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Keypoints 2020</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#panoptic-2020" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Panoptic 2020</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#densepose-2020" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> DensePose 2020</a></li>
+            <li class="divider"></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#detection-2019" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Detection 2019</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#keypoints-2019" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Keypoints 2019</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#stuff-2019" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Stuff 2019</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#panoptic-2019" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Panoptic 2019</a></li>
+            <li class="divider"></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#detection-2018" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Detection 2018</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#keypoints-2018" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Keypoints 2018</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#stuff-2018" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Stuff 2018</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#panoptic-2018" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Panoptic 2018</a></li>
+            <li class="divider"></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#detection-2017" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Detection 2017</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#keypoints-2017" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Keypoints 2017</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#stuff-2017" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Stuff 2017</a></li>
+            <li class="divider"></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#detection-2016" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Detection 2016</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#keypoints-2016" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Keypoints 2016</a></li>
+            <li class="divider"></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#detection-2015" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Detection 2015</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#captions-2015" aria-expanded="false"><i class="glyphicon glyphicon-king"></i> Captioning 2015</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <div class="nav-tab-header"></div>
+          <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Evaluate<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a>Participate:</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#format-data">&nbsp;<i class="glyphicon glyphicon-cog"></i> Data Format</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#format-results">&nbsp;<i class="glyphicon glyphicon-cog"></i> Results Format</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#guidelines">&nbsp;<i class="glyphicon glyphicon-cog"></i> Test Guidelines</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#upload">&nbsp;<i class="glyphicon glyphicon-cog"></i> Upload Results</a></li>
+            <li class="divider"></li>
+            <li><a>Evaluate:</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#detection-eval">&nbsp;<i class="glyphicon glyphicon-stats"></i> Detection</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#keypoints-eval">&nbsp;<i class="glyphicon glyphicon-stats"></i> Keypoints</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#stuff-eval">&nbsp;<i class="glyphicon glyphicon-stats"></i> Stuff</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#panoptic-eval">&nbsp;<i class="glyphicon glyphicon-stats"></i> Panoptic</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#densepose-eval">&nbsp;<i class="glyphicon glyphicon-stats"></i> DensePose</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#captions-eval">&nbsp;<i class="glyphicon glyphicon-stats"></i> Captions</a></li>
+            <li class="divider"></li>
+            <li><a>Leaderboards:</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#detection-leaderboard">&nbsp;<i class="glyphicon glyphicon-th-list"></i> Detection</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#keypoints-leaderboard">&nbsp;<i class="glyphicon glyphicon-th-list"></i> Keypoints</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#stuff-leaderboard">&nbsp;<i class="glyphicon glyphicon-th-list"></i> Stuff</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#panoptic-leaderboard">&nbsp;<i class="glyphicon glyphicon-th-list"></i> Panoptic</a></li>
+            <li><a data-toggle="tab" href="https://cocodataset.org/#captions-leaderboard">&nbsp;<i class="glyphicon glyphicon-th-list"></i> Captions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div></div>
+  <div id="content" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade active in" id="home"><script>$(function(){populateHomePage()})</script>
+<h1>HBNU-MD News</h1>
+<ul class="fontSubtle fontBigger">
+  <li>We collected a data set of campus face masks.</li>
+  <li>Face masks are collected by various devices, car cameras, drones and mobile phones of various models.</li>
+  <li>In addition to the photos collected on campus, some photos in <a class="fontBoldish" href="https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset"> RMFD</a> are also combined, and the number of photos in the final data set is nearly 10000. </li>
+  <li>If you want to add some real face mask photos to our dataset, you can send an email to 1090654389@qq.com.</li>
+  <!--
+  <li>We are pleased to announce the COCO 2020 <a class="fontBoldish" href="#detection-2020">Detection</a>, <a class="fontBoldish" href="#keypoints-2020">Keypoint</a>, <a class="fontBoldish" href="#panoptic-2020">Panoptic</a>, and <a class="fontBoldish" href="#densepose-2020">DensePose</a> Challenges.<br/></li>
+  <li class="fontBoldish">The new rules and awards for this year challenges encourage innovative methods.</li>
+  <li>Results to be announced at the <a class="fontBoldish" href="workshop/coco-lvis-eccv-2020.html">Joint COCO and LVIS Recognition</a> ECCV workshop.</li>
+  -->
+  <!--
+  <li>We are pleased to announce the COCO 2019 <a class="fontBoldish" href="#detection-2019">Detection</a>, <a class="fontBoldish" href="#keypoints-2019">Keypoint</a>, <a class="fontBoldish" href="#panoptic-2019">Panoptic</a>, and <a class="fontBoldish" href="http://densepose.org/">DensePose</a> Challenges.<br/></li>
+  <li class="fontBoldish">The new rules and awards for this year challenges encourage innovative methods.</li>
+  <li>Results to be announced at the <a class="fontBoldish" href="workshop/coco-mapillary-iccv-2019.html">Joint COCO and Mapillary Recognition</a> ICCV workshop.</li> -->
+  <!--
+  <li>Congratulations to the <b>winners</b> of the <a class="fontBoldish" href="workshop/coco-mapillary-eccv-2018.html">ECCV 2018 Joint COCO and Mapillary Recognition</a> Workshop! Please visit the challenge website to view the winners and their talk slides.</li>
+  <li><span class="fontBoldish">Note: COCO challenge deadline extended to August 17th.</span></li>
+  <li>We are pleased to announce the COCO 2018 <a class="fontBoldish" href="#detection-2018">Detection</a> and <a class="fontBoldish" href="#keypoints-2018">Keypoint</a> Challenges.<br/></li>
+  <li>Check out the new COCO <a class="fontBoldish" href="#panoptic-2018">Panoptic Segmentation</a> and <a class="fontBoldish" href="http://densepose.org/" target="_blank">DensePose</a> Challenges!</br></li>
+  <li>Results to be announced at the <a class="fontBoldish" href="workshop/coco-mapillary-eccv-2018.html">Joint COCO and Mapillary Recognition</a> ECCV workshop.</li>
+  -->
+</ul>
+<div class="columnFeatures">
+  <h1>What is HBNU-MD?</h1>
+  <img class="iconsImage" src="./COCO - Common Objects in Context_files/Dataset.png">
+  <p class="fontSubtle">HBNU-MD is a data set of face masks, with photos from the campus and some from RMFD,Including:</p>
+  <ul class="fontSubtle fontBold noBullet">
+    <li class="checkBullet">Nearly 6000 face objects</li>
+    <li class="checkBullet">Nearly 15000 face objects</li>
+    <li class="checkBullet">More than 6000 campus images</li>
+    <li class="checkBullet">Nearly 3000 images from RMFD</li>
+    <li> </li>
+    <li class="checkBullet">Nearly 10000 images</li>
+  </ul>
+</div>
+<div class="columnPeople">
+  <h1>Participants</h1>
+  <h2>Teacher</h2>
+  <table>
+   <tr><a href="https://dqxy.hbnu.edu.cn/2021/0731/c130a118702/page.htm" target="_blank"><font size ="4px">CHEN Yongming</font></a></tr>&ensp;
+  </table>
+  <h2>Students</h2>
+  <table>
+   <tr><font size ="4px">YU Feiyang</font> </tr>&ensp;
+   <tr><font size ="4px">ZHAO Feiyu</font></tr>
+  </table>
+<table>
+   <tr><font size ="4px">WANG Xiaoxuan</font> </tr>&ensp;
+   <tr><font size ="4px">LIU Huan</font></tr>
+  </table>
+  <table>
+   <tr><font size ="4px">TANG Chengqian</font></tr>&ensp;
+   <tr><font size ="4px">LI Changliu</font></tr>
+  </table>
+<table>
+   <tr><font size ="4px">LUO Rui</font></tr>&ensp;
+   <tr><font size ="4px">YANG Yifan </font></tr>&ensp;
+  </table>
+<table>
+   <tr><font size ="4px">ZHAO Jiarui</font></tr>&ensp;
+   <tr><font size ="4px">WU Shixuan</font></tr>
+  </table>
+<table>
+   <tr><font size ="4px">XU Wei</font></tr>&ensp;
+   <tr><font size ="4px">ZHU Ruidi </font></tr>&ensp;
+  </table>
+<table>
+   <tr><font size ="4px">LI Pengbo</font></tr>&ensp;
+   <tr><font size ="4px">HU Jiahao </font></tr>&ensp;
+  </table>
+<table>
+   <tr><font size ="4px">ZHENG Penghui</font></tr>&nbsp;
+   <tr><font size ="4px">ZHANG Yedong</font></tr>
+  </table>
+<table>
+   <tr><font size ="4px">WANG Shun</font> </tr>&ensp;
+   <tr><font size ="4px">CUI Yuexuan </font></tr>
+  </table>
+<table>
+   <tr> </tr>
+  </table>
+<table>
+   <tr> </tr>
+  </table>
+<table>
+   <tr> </tr>
+  </table>
+<table>
+   <tr></tr>
+  </table>
+<table>
+   <tr> </tr>
+  </table>
+<table>
+   <tr> </tr>
+  </table>
+<table>
+   <tr> </tr>
+  </table>
+</div>
+
+<div class="Dataset Download">
+  <h1>Dataset Donwload</h1>
+  <li>Download link of face mask data set:</li>
+  (1)<a href="https://pan.baidu.com/s/1wlMJNzYB31QmncNAKM9j8A" target="_blank">hbnudq1 Extraction code：hbnu</a><br>
+  (2)<a href="https://pan.baidu.com/s/17uXJoz38r6TaNWBFX1Hubg" target="_blank">hbnudq2 Extraction code：hbn3</a><br>
+  (3)<a href="https://pan.baidu.com/s/1xp-SQpoMH2--_o-ZXI9MJQ " target="_blank">hbnudq3 Extraction code：hbn2</a><br>
+  (4)<a href="https://pan.baidu.com/s/16X1-jcmLhcangJXVPZeMsw" target="_blank">Internet   Extraction code：hbn4</a><br>
+  (5)<a href="https://pan.baidu.com/s/1_H08xDysW7p_rtiKpQk41g" target="_blank">AIZOO  Extraction code：hbn5</a><br>
+</div>
+
+<h1>HBNU-MD example</h1>
+<p><img class="wide" src="./COCO - Common Objects in Context_files/Dataset_example.png"></p>
+</div>
+
+<div class="Supports">
+  <h1>Support</h1>
+  <p><a href="https://dqxy.hbnu.edu.cn/" target="_blank"><img class="wide" src="./COCO - Common Objects in Context_files/HBNU-logo.png"></a></p></div>
+
+
+<table></table>
+<div role="tabpanel" class="tab-pane fade" id="people"><script>$(function(){populatePeoplePage()})</script>
+<h1>Photos of participants</h1>
+<h2>Teacher</h2>
+<table>
+<tr>
+<th><a href="https://dqxy.hbnu.edu.cn/2021/0731/c130a118702/page.htm" target="_blank"><img class="iconsImage" src="./COCO - Common Objects in Context_files/cym.JPG"></a></br><font color="red" font size ="4px">CHEN Yongming</font></th>
+</tr>
+</table>
+<h2>Member of Intelligent Robot Laboratory</h2>
+<table>
+<tr>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/yfy.jpg"></br><font color="red" font size ="4px">YU Feiyang</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/zfy.jpg"></br><font color="red" font size ="4px">ZHAO Feiyu</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/wxx.jpg"></br><font color="red" font size ="4px">WANG Xiaoxuan</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/lh.png"></br><font color="red" font size ="4px">LIU Huan</font></th>
+</tr>
+</table>
+<h2>Member of collecting and labeling</h2>
+<table>
+<p>
+<tr>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/wsx.jpg"></br><font color="red" font size ="4px">WU Shixuan</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/xw.jpg"></br><font color="red" font size ="4px">XU Wei</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/zrd.jpg"></br><font color="red" font size ="4px">ZHU Ruidi</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/lpb.jpg"></br><font color="red" font size ="4px"”>LI Pengbo</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/hjh.jpg"><font color="red" font size ="4px"”>HU Jiahao</font></th>
+</tr>
+<tr>
+<th></br></th>
+<th></br></th>
+<th></br></th>
+<th></br></th>
+<th></br></th>
+</tr>
+
+<tr>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/ws.jpg"></br><font color="red" font size ="4px">WAMG Shun</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/zph.jpg"></br><font color="red" font size ="4px">ZHENG Penghui</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/lcl.jpg"></br><font color="red" font size ="4px">LI Changliu</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/zyd.jpg"></br><font color="red" font size ="4px">ZHANG Yedong</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/tcq.jpg"></br><font color="red" font size ="4px">TANG Chengqian</font></th>
+</tr>
+<tr>
+<th></br></th>
+<th></br></th>
+<th></br></th>
+<th></br></th>
+<th></br></th>
+</tr>
+
+<tr>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/zjr.jpg"></br><font color="red" font size ="4px">ZHAO Jiarui</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/cyx.jpg"></br><font color="red" font size ="4px">CUI Yuexuan</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/lr.jpg"></br><font color="red" font size ="4px">LUO Ri</font></th>
+<th><img class="iconsImage" src="./COCO - Common Objects in Context_files/yyf.jpg"></br><font color="red" font size ="4px">YANG Yifan</font></th>
+</tr>
+</table>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="overview"><h1><i class="glyphicon glyphicon-search"></i> <a href="https://cocodataset.org/#explore">Explore</a></h1>
+<p>Explore the dataset using our online interface. Get a sense of the scale and type of data in COCO.</p>
+
+<h1><i class="glyphicon glyphicon-download"></i> <a href="https://cocodataset.org/#download">Download</a></h1>
+<p>Download the dataset, including tools, images, and annotations. See <a href="https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocoDemo.ipynb" target="_blank" class="fontMono">cocoDemo</a> in either the Matlab or Python code.</p>
+
+<h1><i class="glyphicon glyphicon-cloud-download"></i> <a href="https://cocodataset.org/#external">External</a></h1>
+<p>Download external datasets that complement or extend COCO, including COCO annotations for object attributes, VQA, human actions and interactions with objects, scene text, saliency, etc.</p>
+
+<h1><i class="glyphicon glyphicon-king"></i> Tasks: <span class="fontBigger"><a href="https://cocodataset.org/#detection-2020">Detection</a> | <a href="https://cocodataset.org/#densepose-2020">DensePose</a> | <a href="https://cocodataset.org/#keypoints-2020">Keypoints</a> | <a href="https://cocodataset.org/#stuff-2019">Stuff</a> | <a href="https://cocodataset.org/#panoptic-2020">Panoptic</a> | <a href="https://cocodataset.org/#captions-2015">Captions</a></span></h1>
+<p>Learn about the individual challenge tasks. Come to the workshops to learn about the state of the art. Once you're ready, compete in the challenges to earn prizes and opportunities to present your work!</p>
+
+<h1><i class="glyphicon glyphicon-cog"></i> Participate: <span class="fontBigger"><a href="https://cocodataset.org/#format-data">Data Format</a> | <a href="https://cocodataset.org/#format-results">Results Format</a> | <a href="https://cocodataset.org/#guidelines">Test Guidelines</a> | <a href="https://cocodataset.org/#upload">Upload Results</a></span></h1>
+<p>Develop your algorithm. Run your algorithm on COCO and save the results using the format described. Then, learn about the guidelines for using the val and test sets and participating in challenges.</p>
+
+<h1><i class="glyphicon glyphicon-stats"></i> Evaluate: <span class="fontBigger"><a href="https://cocodataset.org/#detection-eval">Detection</a> | <a href="https://cocodataset.org/#keypoints-eval">Keypoints</a> | <a href="https://cocodataset.org/#stuff-eval">Stuff</a> | <a href="https://cocodataset.org/#panoptic-eval">Panoptic</a> | <a href="https://cocodataset.org/#captions-eval">Captions</a></span></h1>
+<p>Evaluate results of your system. See <a href="https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocoEvalDemo.ipynb" target="_blank" class="fontMono">evalDemo</a> in either the Matlab or Python code and <a href="https://github.com/tylin/coco-caption/blob/master/cocoEvalCapDemo.ipynb" target="_blank" class="fontMono">evalCapDemo</a> in the Python code for detection and caption demo code. Upload your results to the test-set eval servers to compete in public challenges!</p>
+
+<h1><i class="glyphicon glyphicon-th-list"></i> Leaderboard: <span class="fontBigger"><a href="https://cocodataset.org/#detection-leaderboard">Detection</a> | <a href="https://cocodataset.org/#keypoints-leaderboard">Keypoints</a> | <a href="https://cocodataset.org/#stuff-leaderboard">Stuff</a> | <a href="https://cocodataset.org/#panoptic-leaderboard">Panoptic</a> | <a href="https://cocodataset.org/#captions-leaderboard">Captions</a></span></h1>
+<p>Check out the state-of-the-art! See what algorithms are best at the various tasks.</p>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="explore"><!-- uses https://github.com/aehlke/tag-it -->
+<link rel="stylesheet" href="./COCO - Common Objects in Context_files/jquery.tagit.css">
+<script src="./COCO - Common Objects in Context_files/tag-it.min.js.下载"></script>
+<script src="./COCO - Common Objects in Context_files/cocoexplorer.js.下载"></script>
+<script>populateExplorer()</script>
+
+<h1>COCO Explorer</h1>
+<p class="fontSubtle">COCO 2017 train/val browser (123,287 images, 886,284 instances). Crowd labels not shown.</p>
+<div id="exploreIconPanel"><div class="exploreIconSubpanel"><img title="person" id="icon_1" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/1.jpg"><img title="backpack" id="icon_27" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/27.jpg"><img title="umbrella" id="icon_28" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/28.jpg"><img title="handbag" id="icon_31" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/31.jpg"><img title="tie" id="icon_32" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/32.jpg"><img title="suitcase" id="icon_33" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/33.jpg"></div><div class="exploreIconSubpanel"><img title="bicycle" id="icon_2" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/2.jpg"><img title="car" id="icon_3" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/3.jpg"><img title="motorcycle" id="icon_4" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/4.jpg"><img title="airplane" id="icon_5" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/5.jpg"><img title="bus" id="icon_6" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/6.jpg"><img title="train" id="icon_7" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/7.jpg"><img title="truck" id="icon_8" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/8.jpg"><img title="boat" id="icon_9" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/9.jpg"></div><div class="exploreIconSubpanel"><img title="traffic light" id="icon_10" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/10.jpg"><img title="fire hydrant" id="icon_11" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/11.jpg"><img title="stop sign" id="icon_13" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/13.jpg"><img title="parking meter" id="icon_14" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/14.jpg"><img title="bench" id="icon_15" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/15.jpg"></div><div class="exploreIconSubpanel"><img title="bird" id="icon_16" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/16.jpg"><img title="cat" id="icon_17" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/17.jpg"><img title="dog" id="icon_18" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/18.jpg"><img title="horse" id="icon_19" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/19.jpg"><img title="sheep" id="icon_20" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/20.jpg"><img title="cow" id="icon_21" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/21.jpg"><img title="elephant" id="icon_22" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/22.jpg"><img title="bear" id="icon_23" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/23.jpg"><img title="zebra" id="icon_24" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/24.jpg"><img title="giraffe" id="icon_25" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/25.jpg"></div><div class="exploreIconSubpanel"><img title="frisbee" id="icon_34" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/34.jpg"><img title="skis" id="icon_35" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/35.jpg"><img title="snowboard" id="icon_36" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/36.jpg"><img title="sports ball" id="icon_37" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/37.jpg"><img title="kite" id="icon_38" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/38.jpg"><img title="baseball bat" id="icon_39" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/39.jpg"><img title="baseball glove" id="icon_40" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/40.jpg"><img title="skateboard" id="icon_41" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/41.jpg"><img title="surfboard" id="icon_42" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/42.jpg"><img title="tennis racket" id="icon_43" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/43.jpg"></div><div class="exploreIconSubpanel"><img title="bottle" id="icon_44" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/44.jpg"><img title="wine glass" id="icon_46" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/46.jpg"><img title="cup" id="icon_47" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/47.jpg"><img title="fork" id="icon_48" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/48.jpg"><img title="knife" id="icon_49" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/49.jpg"><img title="spoon" id="icon_50" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/50.jpg"><img title="bowl" id="icon_51" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/51.jpg"></div><div class="exploreIconSubpanel"><img title="banana" id="icon_52" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/52.jpg"><img title="apple" id="icon_53" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/53.jpg"><img title="sandwich" id="icon_54" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/54.jpg"><img title="orange" id="icon_55" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/55.jpg"><img title="broccoli" id="icon_56" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/56.jpg"><img title="carrot" id="icon_57" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/57.jpg"><img title="hot dog" id="icon_58" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/58.jpg"><img title="pizza" id="icon_59" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/59.jpg"><img title="donut" id="icon_60" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/60.jpg"><img title="cake" id="icon_61" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/61.jpg"></div><div class="exploreIconSubpanel"><img title="chair" id="icon_62" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/62.jpg"><img title="couch" id="icon_63" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/63.jpg"><img title="potted plant" id="icon_64" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/64.jpg"><img title="bed" id="icon_65" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/65.jpg"><img title="dining table" id="icon_67" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/67.jpg"><img title="toilet" id="icon_70" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/70.jpg"></div><div class="exploreIconSubpanel"><img title="tv" id="icon_72" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/72.jpg"><img title="laptop" id="icon_73" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/73.jpg"><img title="mouse" id="icon_74" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/74.jpg"><img title="remote" id="icon_75" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/75.jpg"><img title="keyboard" id="icon_76" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/76.jpg"><img title="cell phone" id="icon_77" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/77.jpg"></div><div class="exploreIconSubpanel"><img title="microwave" id="icon_78" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/78.jpg"><img title="oven" id="icon_79" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/79.jpg"><img title="toaster" id="icon_80" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/80.jpg"><img title="sink" id="icon_81" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/81.jpg"><img title="refrigerator" id="icon_82" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/82.jpg"></div><div class="exploreIconSubpanel"><img title="book" id="icon_84" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/84.jpg"><img title="clock" id="icon_85" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/85.jpg"><img title="vase" id="icon_86" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/86.jpg"><img title="scissors" id="icon_87" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/87.jpg"><img title="teddy bear" id="icon_88" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/88.jpg"><img title="hair drier" id="icon_89" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/89.jpg"><img title="toothbrush" id="icon_90" class="exploreIconSelect" src="./COCO - Common Objects in Context_files/90.jpg"></div></div>
+<div id="exploreSearchBox"><input id="exploreTags" class="tagit-hidden-field"><ul class="tagit ui-widget ui-widget-content ui-corner-all"><li class="tagit-new"><input type="text" class="ui-widget-content ui-autocomplete-input" autocomplete="off"></li></ul></div>
+<button id="exploreSearchBtn" type="button" class="btn btn-primary">search</button>
+<div id="exploreSearchCount" class="fontSubtle"></div>
+<div id="exploreImageDisplayList"></div>
+<div id="exploreLoading" align="center" style="display: none;"><img src="./COCO - Common Objects in Context_files/iconLoader.gif"></div>
+<div id="exploreDone" class="fontSubtle" style="">No more images to show.</div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="download"><div class="columnApi">
+  <h1>Tools</h1>
+  <h2><a href="https://github.com/cocodataset/cocoapi" target="_blank">COCO API</a></h2>
+</div>
+<div class="columnDownloads">
+  <h1>Images</h1>
+  <p class="fontSmall">
+    <a href="http://images.cocodataset.org/zips/train2014.zip">2014 Train images [83K/13GB]</a><br>
+    <a href="http://images.cocodataset.org/zips/val2014.zip">2014 Val images [41K/6GB]</a><br>
+    <a href="http://images.cocodataset.org/zips/test2014.zip">2014 Test images [41K/6GB]</a><br>
+    <a href="http://images.cocodataset.org/zips/test2015.zip">2015 Test images [81K/12GB]</a><br>
+    <a href="http://images.cocodataset.org/zips/train2017.zip">2017 Train images [118K/18GB]</a><br>
+    <a href="http://images.cocodataset.org/zips/val2017.zip">2017 Val images [5K/1GB]</a><br>
+    <a href="http://images.cocodataset.org/zips/test2017.zip">2017 Test images [41K/6GB]</a><br>
+    <a href="http://images.cocodataset.org/zips/unlabeled2017.zip">2017 Unlabeled images [123K/19GB]</a><br>
+  </p>
+</div>
+<div class="columnDownloads">
+  <h1>Annotations</h1>
+  <p class="fontSmall">
+    <a href="http://images.cocodataset.org/annotations/annotations_trainval2014.zip">2014 Train/Val annotations [241MB]</a><br>
+    <a href="http://images.cocodataset.org/annotations/image_info_test2014.zip">2014 Testing Image info [1MB]</a><br>
+    <a href="http://images.cocodataset.org/annotations/image_info_test2015.zip">2015 Testing Image info [2MB]</a><br>
+    <a href="http://images.cocodataset.org/annotations/annotations_trainval2017.zip">2017 Train/Val annotations [241MB]</a><br>
+    <a href="http://images.cocodataset.org/annotations/stuff_annotations_trainval2017.zip">2017 Stuff Train/Val annotations [1.1GB]</a><br>
+    <a href="http://images.cocodataset.org/annotations/panoptic_annotations_trainval2017.zip">2017 Panoptic Train/Val annotations [821MB]</a><br>
+    <a href="http://images.cocodataset.org/annotations/image_info_test2017.zip">2017 Testing Image info [1MB]</a><br>
+    <a href="http://images.cocodataset.org/annotations/image_info_unlabeled2017.zip">2017 Unlabeled Image info [4MB]</a><br>
+  </p>
+</div>
+<h1>1. Overview</h1>
+
+<p>Which dataset splits should you download? Each year's images are associated with different tasks. Specifically:</p>
+<div class="json">
+  <div class="jsonktxt">2014 Train/Val</div><div class="jsonvtxt"><a href="https://cocodataset.org/#detection-2015">Detection 2015</a>, <a href="https://cocodataset.org/#captions-2015">Captioning 2015</a>, <a href="https://cocodataset.org/#detection-2016">Detection 2016</a>, <a href="https://cocodataset.org/#keypoints-2016">Keypoints 2016</a>, <a href="https://cocodataset.org/#densepose-2020">DensePose 2020</a></div>
+  <div class="jsonktxt">2014 Testing  </div><div class="jsonvtxt"><a href="https://cocodataset.org/#captions-2015">Captioning 2015</a></div>
+  <div class="jsonktxt">2015 Testing  </div><div class="jsonvtxt"><a href="https://cocodataset.org/#detection-2015">Detection 2015</a>, <a href="https://cocodataset.org/#detection-2016">Detection 2016</a>, <a href="https://cocodataset.org/#keypoints-2016">Keypoints 2016</a></div>
+  <div class="jsonktxt">2017 Train/Val/Test<br>&nbsp;</div><div class="jsonvtxt"><a href="https://cocodataset.org/#detection-2017">Detection 2017</a>, <a href="https://cocodataset.org/#keypoints-2017">Keypoints 2017</a>, <a href="https://cocodataset.org/#stuff-2017">Stuff 2017</a>,<br><a href="https://cocodataset.org/#detection-2018">Detection 2018</a>, <a href="https://cocodataset.org/#keypoints-2018">Keypoints 2018</a>, <a href="https://cocodataset.org/#stuff-2018">Stuff 2018</a>, <a href="https://cocodataset.org/#panoptic-2018">Panoptic 2018</a>,<br><a href="https://cocodataset.org/#detection-2019">Detection 2019</a>, <a href="https://cocodataset.org/#keypoints-2019">Keypoints 2019</a>, <a href="https://cocodataset.org/#stuff-2019">Stuff 2019</a>, <a href="https://cocodataset.org/#panoptic-2019">Panoptic 2019</a>,<br><a href="https://cocodataset.org/#detection-2020">Detection 2020</a>, <a href="https://cocodataset.org/#keypoints-2020">Keypoints 2020</a>, <a href="https://cocodataset.org/#panoptic-2020">Panoptic 2020</a></div>
+  <div class="jsonktxt">2017 Unlabeled</div><div class="jsonvtxt fontBlue">[optional data for any competition]</div>
+</div>
+<p class="fontSubtle">If you are submitting to a 2017, 2018, 2019, or 2020 task, you only need to download the 2017 images. You can disregard earlier splits. Note: the split year refers to the year the image splits were released, not the year in which the annotations were released.</p>
+<p>For efficiently downloading the images, we recommend using <a href="https://cocodataset.org/#gsutil-rsync" data-toggle="collapse" aria-expanded="false" aria-controls="gsutil-rsync"><i class="glyphicon glyphicon-chevron-right"></i><i class="glyphicon glyphicon-chevron-down"></i>gsutil rsync</a> to avoid the download of large zip files. Please follow the instructions in the <a href="https://github.com/cocodataset/cocoapi" target="_blank">COCO API Readme</a> to setup the downloaded COCO data (the images and annotations should go in coco/images/ and coco/annotations/). By downloading this dataset, you agree to our <a href="https://cocodataset.org/#termsofuse">Terms of Use</a>.</p>
+<div id="gsutil-rsync" class="collapse">
+  <div class="json">
+    <p>Our data is hosted on Google Cloud Platform (GCP). <span class="fontMono"> gsutil</span> provides tools for efficiently accessing this data. You do <i>not</i> need a GCP account to use <span class="fontMono"> gsutil</span>. Instructions for downloading the data are as follows:</p>
+    <div class="jsonktxt">(1) Install gsutil via:</div><div class="jsonvtxt fontBlue">curl https://sdk.cloud.google.com | bash </div>
+    <div class="jsonktxt">(2) Make local dir:</div><div class="jsonvtxt fontBlue">mkdir val2017</div>
+    <div class="jsonktxt">(3) Synchronize via:</div><div class="jsonvtxt fontBlue">gsutil -m rsync gs://images.cocodataset.org/val2017 val2017</div>
+    <p>The splits are available for download via rsync are: train2014, val2014, test2014, test2015, train2017, val2017, test2017, unlabeled2017. Simply replace 'val2017' with the split you wish to download and repeat steps (2)-(3). Finally, you can also download all the annotation zip files via:</p>
+    <div class="jsonktxt">(4) Get annotations: </div><div class="jsonvtxt fontBlue">gsutil -m rsync gs://images.cocodataset.org/annotations [localdir]</div>
+    <p>The download is multi-threaded, you can control other options of the download as well (see <a href="https://cloud.google.com/storage/docs/gsutil/commands/rsync">gsutil rsync</a>). Please do not contact us with help
+    <a href="https://cloud.google.com/storage/docs/gsutil_install">installing gsutil</a> (we note only that you do not need to run <span class="fontMono"> gcloud init</span>).</p>
+  </div>
+</div>
+<p><b>2020 Update:</b> All data for all challenges stays unchanged.</p>
+<p><b>2019 Update:</b> All data for all challenges stays unchanged.</p>
+<p><b>2018 Update:</b> Detection and keypoint data is unchanged. New in 2018, complete stuff and panoptic annotations for all 2017 images are available. Note: <i>if you downloaded the stuff annotations prior to 06/17/2018, please re-download.</i></p>
+<p><b>2017 Update:</b> The main change in 2017 is that instead of an 83K/41K train/val split, based on community feedback the split is now 118K/5K for train/val. The same exact images are used, and no new annotations for detection/keypoints are provided. However, new in 2017 are stuff annotations on 40K train images (subset of the full 118K train images from 2017) and 5K val images. Also, for testing, in 2017 the test set only has two splits (dev / challenge), instead of the four splits (dev / standard / reserve / challenge) used in previous years. Finally, new in 2017 we are releasing 120K unlabeled images from COCO that follow the same class distribution as the labeled images; this may be useful for semi-supervised learning on COCO.</p>
+
+<h1>2. COCO API</h1>
+<p>The COCO API assists in loading, parsing, and visualizing annotations in COCO. The API supports multiple annotation formats (please see the <a href="https://cocodataset.org/#format-data">data format</a> page). For additional details see: <a href="https://github.com/cocodataset/cocoapi/blob/master/MatlabAPI/CocoApi.m" target="_blank">CocoApi.m</a>, <a href="https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/coco.py" target="_blank">coco.py</a>, and <a href="https://github.com/cocodataset/cocoapi/blob/master/LuaAPI/CocoApi.lua" target="_blank">CocoApi.lua</a> for Matlab, Python, and Lua code, respectively, and also the <a href="https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocoDemo.ipynb" target="_blank">Python API demo</a>.</p>
+<div class="json">
+  <div>Throughout the API "ann"=annotation, "cat"=category, and "img"=image.</div>
+  <div class="jsonkfunc">getAnnIds</div><div class="jsonvtxt">Get ann ids that satisfy given filter conditions.</div>
+  <div class="jsonkfunc">getCatIds</div><div class="jsonvtxt">Get cat ids that satisfy given filter conditions.</div>
+  <div class="jsonkfunc">getImgIds</div><div class="jsonvtxt">Get img ids that satisfy given filter conditions.</div>
+  <div class="jsonkfunc">loadAnns</div><div class="jsonvtxt">Load anns with the specified ids.</div>
+  <div class="jsonkfunc">loadCats</div><div class="jsonvtxt">Load cats with the specified ids.</div>
+  <div class="jsonkfunc">loadImgs</div><div class="jsonvtxt">Load imgs with the specified ids.</div>
+  <div class="jsonkfunc">loadRes</div><div class="jsonvtxt">Load algorithm results and create API for accessing them.</div>
+  <div class="jsonkfunc">showAnns</div><div class="jsonvtxt">Display the specified annotations.</div>
+</div>
+
+<h1>3. MASK API</h1>
+<p>COCO provides segmentation masks for every object instance. This creates two challenges: storing masks compactly and performing mask computations efficiently. We solve both challenges using a custom Run Length Encoding (RLE) scheme. The size of the RLE representation is proportional to the number of boundaries pixels of a mask and operations such as area, union, or intersection can be computed efficiently directly on the RLE. Specifically, assuming fairly simple shapes, the RLE representation is O(√n) where n is number of pixels in the object, and common computations are likewise O(√n). Naively computing the same operations on the decoded masks (stored as an array) would be O(n).</p>
+<p>The MASK API provides an interface for manipulating masks stored in RLE format. The API is defined below, for additional details see: <a href="https://github.com/cocodataset/cocoapi/blob/master/MatlabAPI/MaskApi.m" target="_blank">MaskApi.m</a>, <a href="https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/mask.py" target="_blank">mask.py</a>, or <a href="https://github.com/cocodataset/cocoapi/blob/master/LuaAPI/MaskApi.lua" target="_blank">MaskApi.lua</a>. Finally, we note that a majority of ground truth masks are stored as polygons (which are quite compact), these polygons are converted to RLE when needed.</p>
+<div class="json">
+  <div class="jsonkfunc">encode</div><div class="jsonvtxt">Encode binary masks using RLE.</div>
+  <div class="jsonkfunc">decode</div><div class="jsonvtxt">Decode binary masks encoded via RLE.</div>
+  <div class="jsonkfunc">merge</div><div class="jsonvtxt">Compute union or intersection of encoded masks.</div>
+  <div class="jsonkfunc">iou</div><div class="jsonvtxt">Compute intersection over union between masks.</div>
+  <div class="jsonkfunc">area</div><div class="jsonvtxt">Compute area of encoded masks.</div>
+  <div class="jsonkfunc">toBbox</div><div class="jsonvtxt">Get bounding boxes surrounding encoded masks.</div>
+  <div class="jsonkfunc">frBbox</div><div class="jsonvtxt">Convert bounding boxes to encoded masks.</div>
+  <div class="jsonkfunc">frPoly</div><div class="jsonvtxt">Convert polygon to encoded mask.</div>
+</div>
+
+<h1>4. FiftyOne</h1>
+<p>
+<a class="fontBoldish" href="https://fiftyone.ai/">FiftyOne</a> is an open-source tool facilitating visualization and access to COCO data resources and serves as an evaluation tool for model analysis on COCO.
+</p>
+<p><a href="https://fiftyone.ai/"><img class="wide" src="./COCO - Common Objects in Context_files/fiftyone-example.png"></a></p>
+
+<p>
+COCO can now be downloaded from the
+<a href="https://voxel51.com/docs/fiftyone/user_guide/dataset_zoo/index.html">FiftyOne Dataset Zoo</a>:
+</p><pre>dataset = fiftyone.zoo.load_zoo_dataset("coco-2017")</pre>
+
+<p>
+FiftyOne also provides methods allowing you to
+download and visualize specific subsets of the dataset with only the labels
+and classes that you care about in a couple of lines of code.
+</p>
+
+<pre>dataset = fiftyone.zoo.load_zoo_dataset(
+    "coco-2017",
+    split="validation",
+    label_types=["detections", "segmentations"],
+    classes=["person", "car"],
+    max_samples=50,
+)
+
+# Visualize the dataset in the FiftyOne App
+session = fiftyone.launch_app(dataset)
+</pre>
+
+<p>
+Once you start training models on COCO, you can use
+<a href="https://voxel51.com/docs/fiftyone/integrations/coco.html">FiftyOne's COCO-style evaluation</a>
+to understand your model performance with detailed analysis,
+<a href="https://voxel51.com/docs/fiftyone/user_guide/using_views.html#evaluation-patches">visualize individual false positives</a>,
+<a href="https://voxel51.com/docs/fiftyone/user_guide/evaluation.html#map-and-pr-curves">plot PR curves</a>, and
+<a href="https://voxel51.com/docs/fiftyone/user_guide/plots.html#confusion-matrices">interact with confusion matrices</a>.
+</p>
+<p>
+For additional details see the FiftyOne and COCO integration <a href="https://voxel51.com/docs/fiftyone/integrations/coco.html">documentation</a>.
+
+</p>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="external"></div>
+<div role="tabpanel" class="tab-pane fade" id="termsofuse"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-2020"><h1>COCO 2020 Object Detection Task</h1>
+<p><img src="./COCO - Common Objects in Context_files/detection-splash.png" class="wide"></p>
+
+<h1>1. Overview</h1>
+<p>The COCO Object Detection Task is designed to push the state of the art in object detection forward. COCO features two object detection tasks: using either bounding box output or object segmentation output (the latter is also known as instance segmentation). For full details of this task please see the <a href="https://cocodataset.org/#detection-eval">detection evaluation</a> page. Note: <b>only the detection task with object segmentation output will be featured at the COCO 2020 challenge</b> (more details follow below).</p>
+<p>This task is part of the <a href="https://cocodataset.org/workshop/coco-lvis-eccv-2020.html">Joint COCO and LVIS Recognition Challenge Workshop</a> at ECCV 2020. For further details about the joint workshop please visit the workshop page. Researchers are encouraged to participate in both the COCO and LVIS Object Detection Tasks (the tasks share identical data formats and evaluation metrics). Please also see the related COCO <a href="https://cocodataset.org/#keypoints-2020">keypoint</a>, <a href="https://cocodataset.org/#stuff-2019">stuff</a>, and <a href="https://cocodataset.org/#panoptic-2020">panoptic</a> tasks. Whereas the detection task addresses <i>thing</i> classes (person, car, elephant), the <a href="https://cocodataset.org/#stuff-2019">stuff</a> task focuses on <i>stuff</i> classes (grass, wall, sky) and the newly introduced <a href="https://cocodataset.org/#panoptic-2020">panoptic</a> task addresses both simultaneously.</p>
+<p>The COCO train, validation, and test sets, containing more than 200,000 images and 80 object categories, are available on the <a href="https://cocodataset.org/#download">download</a> page. All object instances are annotated with a detailed segmentation mask. Annotations on the training and validation sets (with over 500,000 object instances segmented) are publicly available.</p>
+<p>This is the fifth iteration of the detection task and it exactly follows the <a href="https://cocodataset.org/#detection-2019">COCO 2019 Object Detection Task</a>. In particular, the same data, metrics, and guidelines are being used for this year's task. As in 2019 <i>only the instance segmentation task will be featured at the challenge, with winners being invited to present at the workshop</i>. For detection with bounding boxes outputs, researchers may continue to submit to test-dev and val on the <a href="https://competitions.codalab.org/competitions/20796" target="_blank">evaluation server</a>, but not to test-challenge, and results will not be presented at the workshop. As detection has steadily advanced, the purpose of this change is to encourage the community to focus on the more challenging and visually informative instance segmentation task.</p>
+
+<h1>2. Dates</h1>
+<div class="json">
+  <div class="jsonktxt fontBlue">August 7, 2020</div><div class="jsonvtxt">Submission deadline (11:59 PM PST) <strong>(1 week extension)</strong> </div>
+  <div class="jsonktxt">August 10, 2020</div><div class="jsonvtxt">Technical report submission deadline (11:59 PM PST)</div>
+  <div class="jsonktxt">August 17, 2020</div><div class="jsonvtxt">Challenge winners notified</div>
+  <div class="jsonktxt">August 21, 2020</div><div class="jsonvtxt">Presenter's slides and videos due (submitted to organizers)</div>
+  <div class="jsonktxt">August 23, 2020</div><div class="jsonvtxt">ECCV 2020 Workshop</div>
+</div>
+
+<h1>3. New Rules and Awards</h1>
+<ul>
+  <li>Participants must submit a <strong>technical report</strong> that includes a detailed ablation study of their submission via <a href="https://cmt3.research.microsoft.com/COCOLVIS2020">CMT</a>. For the technical report, use the following ECCV-based <a href="https://cocodataset.org/files/tech_report_template_eccv20.zip">template</a>. Suggested length of the report is 2-7 pages. The reports will be made public. This report will substitute the short text description that we requested previously. Only submissions with the report will be considered for any award and will be put in the COCO leaderboard.</li>
+  <li>This year for each challenge track we will have two different awards: <strong>best result award</strong> and <strong>most innovative award</strong>. The most innovative award will be based on the method description in the submitted technical reports and decided by the COCO award committee. The commitee will invite teams to present at the workshop based on the innovations of the submissions rather than the best scores.</li>
+  <li>This year we introduce single <strong>best paper award</strong> for the most innovative and successful solution across all challenges. The winner will be determined by the workshop organization committee.</li>
+</ul>
+
+<h1>4. Organizers</h1>
+<div>Yin Cui (Google Research)</div>
+<div>Tsung-Yi Lin (Google Research)</div>
+<div>Matteo Ruggero Ronchi (Caltech)</div>
+<div>Alexander Kirillov (Facebook AI Research)</div>
+
+<h1>5. Award Committee</h1>
+<div>Yin Cui (Google Research)</div>
+<div>Tsung-Yi Lin (Google Research)</div>
+<div>Alexander Kirillov (Facebook AI Research)</div>
+<div>Natalia Neverova (Facebook AI Research)</div>
+<div>Matteo Ruggero Ronchi (Caltech)</div>
+<div>Michael Maire (University of Chicago)</div>
+<div>Lubomir Bourdev (WaveOne, Inc.)</div>
+<div>James Hays (Georgia Tech)</div>
+<div>Larry Zitnick (Facebook AI Research)</div>
+<div>Ross Girshick (Facebook AI Research)</div>
+<div>Piotr Dollár (Facebook AI Research)</div>
+
+
+<h1>6. Task Guidelines</h1>
+<p>Participants are recommended but not restricted to train their algorithms on COCO 2017 train and val sets. The <a href="https://cocodataset.org/#download">download</a> page has links to all COCO 2017 data. The COCO test set is divided into two splits: test-dev and test-challenge. Test-dev is as the default test set for testing under general circumstances and is used to maintain a public <a href="https://cocodataset.org/#detection-leaderboard">leaderboard</a>. Test-challenge is used for the workshop competition; results will be revealed at the workshop. When participating in this task, please specify any and all external data used for training in the "method description" when uploading results to the evaluation server. A more thorough explanation of all these details is available on the <a href="https://cocodataset.org/#guidelines">guidelines</a> page, please be sure to review it carefully prior to participating. Results in the correct <a href="https://cocodataset.org/#format-results">format</a> must be <a href="https://cocodataset.org/#upload">uploaded</a> to the <a href="https://competitions.codalab.org/competitions/20796" target="_blank">evaluation server</a>. The <a href="https://cocodataset.org/#detection-eval">evaluation</a> page lists detailed information regarding how results will be evaluated.</p>
+
+<h1>7. Tools and Instructions</h1>
+<p>We provide extensive API support for the COCO images, annotations, and evaluation code. To download the COCO API, please visit our <a href="https://github.com/cocodataset/cocoapi">GitHub repository</a>. For an overview of how to use the API, please visit the <a href="https://cocodataset.org/#download">download</a> page. Due to the large size of COCO and the complexity of this task, the process of participating may not seem simple. To help, we provide explanations and instructions for each step of the process on the <a href="https://cocodataset.org/#download">download</a>, <a href="https://cocodataset.org/#format-data">data format</a>, <a href="https://cocodataset.org/#format-results">results format</a>, <a href="https://cocodataset.org/#guidelines">guidelines</a>, <a href="https://cocodataset.org/#upload">upload</a>, and <a href="https://cocodataset.org/#detection-eval">evaluation</a> pages. For additional questions, please contact <a href="mailto:info@cocodataset.org">info@cocodataset.org</a>.</p>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="keypoints-2020"></div>
+<div role="tabpanel" class="tab-pane fade" id="panoptic-2020"></div>
+<div role="tabpanel" class="tab-pane fade" id="densepose-2020"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-2019"></div>
+<div role="tabpanel" class="tab-pane fade" id="keypoints-2019"></div>
+<div role="tabpanel" class="tab-pane fade" id="stuff-2019"></div>
+<div role="tabpanel" class="tab-pane fade" id="panoptic-2019"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-2018"></div>
+<div role="tabpanel" class="tab-pane fade" id="keypoints-2018"></div>
+<div role="tabpanel" class="tab-pane fade" id="stuff-2018"></div>
+<div role="tabpanel" class="tab-pane fade" id="panoptic-2018"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-2017"></div>
+<div role="tabpanel" class="tab-pane fade" id="keypoints-2017"></div>
+<div role="tabpanel" class="tab-pane fade" id="stuff-2017"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-2016"></div>
+<div role="tabpanel" class="tab-pane fade" id="keypoints-2016"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-2015"></div>
+<div role="tabpanel" class="tab-pane fade" id="captions-2015"></div>
+<div role="tabpanel" class="tab-pane fade" id="format-data"></div>
+<div role="tabpanel" class="tab-pane fade" id="format-results"></div>
+<div role="tabpanel" class="tab-pane fade" id="guidelines"></div>
+<div role="tabpanel" class="tab-pane fade" id="upload"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-eval"></div>
+<div role="tabpanel" class="tab-pane fade" id="keypoints-eval"></div>
+<div role="tabpanel" class="tab-pane fade" id="stuff-eval"></div>
+<div role="tabpanel" class="tab-pane fade" id="panoptic-eval"></div>
+<div role="tabpanel" class="tab-pane fade" id="densepose-eval"></div>
+<div role="tabpanel" class="tab-pane fade" id="captions-eval"></div>
+<div role="tabpanel" class="tab-pane fade" id="detection-leaderboard"></div>
+<div role="tabpanel" class="tab-pane fade" id="keypoints-leaderboard"></div>
+<div role="tabpanel" class="tab-pane fade" id="stuff-leaderboard"></div>
+<div role="tabpanel" class="tab-pane fade" id="panoptic-leaderboard"></div>
+<div role="tabpanel" class="tab-pane fade" id="captions-leaderboard"></div>
+</div>
+  <div id="footer"><div>
+    <a href="https://github.com/0811yu/0811yu.github.io" target="_blank">Github Page Source</a>
+  </div></div>
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front tagit-autocomplete" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
