@@ -32,22 +32,19 @@
   [![](https://img.shields.io/badge/pytorch-1.9.0-blue)](https://pytorch.org/)
   [![](https://img.shields.io/badge/torchvision-0.10.0-orange)](https://pypi.org/project/torchvision/)
   ![](https://img.shields.io/conda/pn/conda-forge/python?label=windows)
-  [![](https://img.shields.io/badge/originlab-2021-brightgreen)](https://www.originlab.com/)
   
 
   [🛠️Installation Dependencies](#Dependencies) |
   [🎤Introduction](#Introduction) |
  
-  [👀Top-N Accuracy vs. Computational Complexity vs. Model Complexity](https://github.com/0811yu/0811yu.github.io) |
+  [👀Download Dataset](https://0811yu.github.io) |
   
-  [🌊Top-1 Accuracy vs. Model Efficiency](https://github.com/0811yu/0811yu.github.io) |
-  [🚀Inference Time](https://github.com/fancywang0704/Models-Comparison) |
+  [🌊a new evaluation standard](https://github.com/0811yu/0811yu.github.io) |
+  [🚀heterogeneous computing modalities](https://github.com/0811yu/0811yu.github.io) |
   
-  [🤔Top-1 Accuracy vs. Inference Time](https://github.com/0811yu/0811yu.github.io) |
+  [🤔The limit detection distance of the model](https://github.com/0811yu/0811yu.github.io) |
  
-  [🔥Memory Usage vs. Model Complexity](https://github.com/0811yu/0811yu.github.io)
-  
-  
+
 </div>
 
 ## Dependencies:
@@ -59,7 +56,6 @@
  - Windows 10  Ubuntu 18.04 
  - [Google Colab](https://colab.research.google.com/)
  - NVIDIA GeForce RTX 3050  Jeston Nano
- - [OriginLab](https://www.originlab.com/)
 
 ## Introduction
 
