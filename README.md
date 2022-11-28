@@ -82,11 +82,11 @@ In order to measure the maximum detection ability of the model, We established a
 
 </div>
 
-A combination method of cluster analysis and regression analysis from a quantitative perspective was designed to specifically analyze how the inference time varies with batch size in the above Table shown in Figure below.
+
 
 
 ## Result of experiment
-It showed the top-1 accuracy versus the number of images processed per second (with batch size 1) on the Google Colab computing platform. For a scatter plot of the relationship between top-1 accuracy and FPS in Intel NCS2, please see the paper.
+
 
 
 ## Embed the edge computer into the UGV
