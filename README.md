@@ -91,5 +91,11 @@ It showed the top-1 accuracy versus the number of images processed per second (w
 
 ## Embed the edge computer into the UGV
 We embed the edge computer into the UGV for testing. The introduction of getting off the car is as follows. You can also watch the equipment used and the testing process through the video through the link below.
-![图片](https://user-images.githubusercontent.com/101705236/173182488-4d212d55-03ef-4b10-88f4-e86de6c0bc16.png)
+### UGV
+<div>
+<p><img class="wide" src="./COCO - Common Objects in Context_files/UGV.png"></p>
+</div>
+ 
+
+
  
