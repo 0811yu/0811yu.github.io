@@ -72,22 +72,22 @@ We have established a website for our dataset, which gives a detailed introducti
 
 ## Three devices
 We tested our proposed model on three devices: local machine, Google Colab cloud computing platform, and Jeston Nano edge computer
-![图片](https://user-images.githubusercontent.com/101705236/173182662-37dec8a7-2cf2-4688-aca0-edcea0dd2f0c.png)
+
 
 
 ## Our proposed evaluation standard
 In order to measure the maximum detection ability of the model, We established a new evaluation standard, namely setting a limit scale. The calculation formula and experimental results are as follows
 
 <div align="center">
-  ![图片](https://user-images.githubusercontent.com/101705236/173182290-15ea961b-79fe-41e8-a944-2487c13ca6f1.png)
+
 </div>
 
 A combination method of cluster analysis and regression analysis from a quantitative perspective was designed to specifically analyze how the inference time varies with batch size in the above Table shown in Figure below.
-![图片](https://user-images.githubusercontent.com/101705236/173182345-7e4e475b-7922-422b-850b-36cafb435ce2.png)
+
 
 ## Result of experiment
 It showed the top-1 accuracy versus the number of images processed per second (with batch size 1) on the Google Colab computing platform. For a scatter plot of the relationship between top-1 accuracy and FPS in Intel NCS2, please see the paper.
-![图片](https://user-images.githubusercontent.com/101705236/173182463-02d6c3bf-392e-462e-b01c-32992aae2af7.png)
+
 
 ## Embed the edge computer into the UGV
 We embed the edge computer into the UGV for testing. The introduction of getting off the car is as follows. You can also watch the equipment used and the testing process through the video through the link below.
