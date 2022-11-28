@@ -66,7 +66,9 @@ In order to test the performance of the model more comprehensively, we propose a
 ## Ours face mask dataset
 We have established a website for our dataset, which gives a detailed introduction to the dataset, you can click the link below to download the dataset.
 <a href="https://0811yu.github.io/#home">Click here to view and download the dataset</a>
-
+<h1>HBNU-MD example</h1>
+<p><img class="wide" src="./COCO - Common Objects in Context_files/Dataset_example.png"></p>
+</div>
 
 ## Top-1 Accuracy vs. Model Efficiency
  It represented the top-1 accuracy density of each DNN model, which was utilized to measure the parameter utilization efficiency of the model. Error bar was used to describe the error range of the top-1 accuracy density.
