@@ -96,7 +96,7 @@ We embed the edge computer into the UGV for testing. The introduction of getting
 <p><img class="wide" src="./COCO - Common Objects in Context_files/UGV.png"></p>
 </div>
 You can see our test of the model through the link below
-<a href="https://www.bilibili.com/video/BV1B44y1D7Tu/spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=3e566f0cb06b6542b1efd377a512e51c">Click here</a>
+<a href="https://www.bilibili.com/video/BV1B44y1D7Tu/?vd_source=3e566f0cb06b6542b1efd377a512e51c">Click here</a>
 
  
 
