@@ -957,7 +957,7 @@ font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></d
 <p><img class="wide" src="./COCO - Common Objects in Context_files/result1.png"></p>
 Figure 2. Results of detecting the face mask objects by (a) and (c) our proposed model and (b) and (d) the baseline model in dense crowds. The solid and dotted circles indicates the missed and the false detected results, respectively. The dark and light red rectangle boxes denote the detected faces with and without the masks, respectively, and the number above the rectangle represents the confidence level.
 
-## Ablation experiments in AIZOO dataset
+### Table 5. Ablation experiments in AIZOO dataset
 <body style="tab-interval:21pt;text-justify-trim:punctuation;" ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt;" ><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;width:100.0000%;border:none;
 mso-border-left-alt:0.5000pt solid windowtext;mso-border-top-alt:0.5000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;
 mso-border-bottom-alt:0.5000pt solid windowtext;mso-border-insideh:0.5000pt solid windowtext;mso-border-insidev:0.5000pt solid windowtext;
@@ -1098,7 +1098,7 @@ font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></d
 
 ## Embed the edge computer into the UGV
 We embed the edge computer into the UGV for testing. The introduction of getting off the car is as follows. You can also watch the equipment used and the testing process through the video through the link below.
-### UGV
+### Figure 3. UGV
 <div>
 <p><img class="wide" src="./COCO - Common Objects in Context_files/UGV.png"></p>
 </div>
@@ -1108,7 +1108,7 @@ You can see our test of the model through the link below
 
 ## Our proposed evaluation standard
 In order to measure the maximum detection ability of the model, We established a new evaluation standard, namely setting a limit scale，which is the ratio of the area of the bounding box to the size of the whole output image. The purpose is to measure the maximum detection ability of the model at long shooting distance. It can be felt that as the shooting distance increases, the face mask features become much vague for the detector. This metric can be effectively used to verify the model's ultimate ability for detecting small objects. 
-### Table 4. Limit detection results at different shooting distances with different scales in the indoor and outdoor environments
+### Table 6. Limit detection results at different shooting distances with different scales in the indoor and outdoor environments
 </head><body style="tab-interval:21pt;text-justify-trim:punctuation;" ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt;" ><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;width:100.0000%;border:none;
 mso-border-left-alt:0.5000pt solid windowtext;mso-border-top-alt:0.5000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;
 mso-border-bottom-alt:0.5000pt solid windowtext;mso-border-insideh:0.5000pt solid windowtext;mso-border-insidev:0.5000pt solid windowtext;
