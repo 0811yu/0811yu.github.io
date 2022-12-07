@@ -70,6 +70,7 @@ We have established a website for our dataset, which gives a detailed introducti
 <p><img class="wide" src="./COCO - Common Objects in Context_files/Dataset_example.png"></p>
 </div>
 
+### Statistics of the collected images, and labeled training and validation marked objects on three face mask datasets of AIZOO, Internet and Ours
 </head><body style="tab-interval:21pt;text-justify-trim:punctuation;" ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt;" ><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;width:100.0000%;border:none;
 mso-border-left-alt:0.5000pt solid windowtext;mso-border-top-alt:0.5000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;
 mso-border-bottom-alt:0.5000pt solid windowtext;mso-border-insideh:0.5000pt solid windowtext;mso-border-insidev:0.5000pt solid windowtext;
