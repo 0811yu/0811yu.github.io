@@ -1649,10 +1649,10 @@ font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></d
 The experimental results obtained after 100 iterations using the improved network model on the AIZOO dataset
 <div>
 <p><img class="wide" src="./COCO - Common Objects in Context_files/result.png"></p>
-Training results of our improved model on the AIZOO face mask dataset. (a-c) and (f-h) correspondingly show the box loss, object loss and classification loss during the training and validation procedures. (d) and (e) are the precision and recall of the model, respectively. (i) and (j) show the mAP at IoU=0.5 and IoU=0.5:0.9, respectively. The x-axis represents the training epochs.
+Figure 1. Training results of our improved model on the AIZOO face mask dataset. (a-c) and (f-h) correspondingly show the box loss, object loss and classification loss during the training and validation procedures. (d) and (e) are the precision and recall of the model, respectively. (i) and (j) show the mAP at IoU=0.5 and IoU=0.5:0.9, respectively. The x-axis represents the training epochs.
 </div>
 
-Comparison of face mask object detection results. As can be seen, the backbone model integrating with the coordinate attention achieves the best results in terms of different measuring metrics of precision, recall and mAP@0.5 during training on the AIZOO dataset.
+### Comparison of face mask object detection results. As can be seen, the backbone model integrating with the coordinate attention achieves the best results in terms of different measuring metrics of precision, recall and mAP@0.5 during training on the AIZOO dataset.
 <body style="tab-interval:21pt;text-justify-trim:punctuation;" ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt;" ><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;border:none;mso-border-left-alt:0.5000pt solid windowtext;
 mso-border-top-alt:0.5000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;mso-border-bottom-alt:0.5000pt solid windowtext;
 mso-border-insideh:0.5000pt solid windowtext;mso-border-insidev:0.5000pt solid windowtext;mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;" ><tr><td width=145  valign=top  style="width:108.9000pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
@@ -1815,7 +1815,147 @@ mso-bidi-font-family:'Times New Roman';line-height:200%;font-weight:bold;
 font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >96.8</font></span></b><b><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
 mso-bidi-font-family:'Times New Roman';line-height:200%;font-weight:bold;
 font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></b></p></td></tr></table><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:宋体;
-font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body></html>
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body>
+
+<p><img class="wide" src="./COCO - Common Objects in Context_files/result1.png"></p>
+Figure 2. Results of detecting the face mask objects by (a) and (c) our proposed model and (b) and (d) the baseline model in dense crowds. The solid and dotted circles indicates the missed and the false detected results, respectively. The dark and light red rectangle boxes denote the detected faces with and without the masks, respectively, and the number above the rectangle represents the confidence level.
+
+## Ablation experiments in AIZOO dataset
+<body style="tab-interval:21pt;text-justify-trim:punctuation;" ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt;" ><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;width:100.0000%;border:none;
+mso-border-left-alt:0.5000pt solid windowtext;mso-border-top-alt:0.5000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;
+mso-border-bottom-alt:0.5000pt solid windowtext;mso-border-insideh:0.5000pt solid windowtext;mso-border-insidev:0.5000pt solid windowtext;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;" ><tr style="height:15.6000pt;" ><td width=40.3200%  valign=top  style="width:40.3200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:2.2500pt solid windowtext;mso-border-top-alt:2.2500pt solid windowtext;border-bottom:1.0000pt solid windowtext;
+mso-border-bottom-alt:0.5000pt solid windowtext;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';line-height:200%;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >Model</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;line-height:200%;
+font-size:7.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9000%  valign=top  style="width:19.9000%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:2.2500pt solid windowtext;mso-border-top-alt:2.2500pt solid windowtext;border-bottom:1.0000pt solid windowtext;
+mso-border-bottom-alt:0.5000pt solid windowtext;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >Precision</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" >(%)</span><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.8200%  valign=top  style="width:19.8200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:2.2500pt solid windowtext;mso-border-top-alt:2.2500pt solid windowtext;border-bottom:1.0000pt solid windowtext;
+mso-border-bottom-alt:0.5000pt solid windowtext;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >Recall</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" >(%)</span><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9600%  valign=top  style="width:19.9600%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:2.2500pt solid windowtext;mso-border-top-alt:2.2500pt solid windowtext;border-bottom:1.0000pt solid windowtext;
+mso-border-bottom-alt:0.5000pt solid windowtext;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >mAP@0.5</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" >(%)</span><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr><tr style="height:15.6000pt;" ><td width=40.3200%  valign=top  style="width:40.3200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:0.5000pt solid windowtext;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  style="line-height:200%;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" >Baseline</span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9000%  valign=top  style="width:19.9000%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:0.5000pt solid windowtext;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >94.5</font></span><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.8200%  valign=top  style="width:19.8200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:0.5000pt solid windowtext;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >91.7</font></span><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9600%  valign=top  style="width:19.9600%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:0.5000pt solid windowtext;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >93.9</font></span><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr><tr style="height:15.6000pt;" ><td width=40.3200%  valign=top  style="width:40.3200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  style="line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >YOLO-v5s+CA</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;line-height:200%;
+font-size:12.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9000%  valign=top  style="width:19.9000%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';line-height:200%;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >95.2</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;line-height:200%;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.8200%  valign=top  style="width:19.8200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';line-height:200%;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >93.7</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;line-height:200%;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9600%  valign=top  style="width:19.9600%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';line-height:200%;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >94.9</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;line-height:200%;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr><tr style="height:15.6000pt;" ><td width=40.3200%  valign=top  style="width:40.3200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  style="line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >YOLO-v5s+CA+BiFPN</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9000%  valign=top  style="width:19.9000%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >95.7</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.8200%  valign=top  style="width:19.8200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >93.4</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9600%  valign=top  style="width:19.9600%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >95.1</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr><tr style="height:15.6000pt;" ><td width=40.3200%  valign=top  style="width:40.3200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  style="line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >YOLO-v5s+CA+BiFPN+ASFF</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9000%  valign=center  style="width:19.9000%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >96.3</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.8200%  valign=center  style="width:19.8200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >94.2</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9600%  valign=center  style="width:19.9600%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >95.7</font></span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr><tr style="height:15.6000pt;" ><td width=40.3200%  valign=top  style="width:40.3200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:2.2500pt solid windowtext;
+mso-border-bottom-alt:2.2500pt solid windowtext;" ><p class=MsoNormal  style="line-height:200%;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" >Ours</span><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-size:10.5000pt;
+mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td><td width=19.9000%  valign=top  style="width:19.9000%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:2.2500pt solid windowtext;
+mso-border-bottom-alt:2.2500pt solid windowtext;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><b><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';line-height:200%;font-weight:bold;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >96.7</font></span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-weight:bold;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></b></p></td><td width=19.8200%  valign=top  style="width:19.8200%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:2.2500pt solid windowtext;
+mso-border-bottom-alt:2.2500pt solid windowtext;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><b><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';line-height:200%;font-weight:bold;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >94.5</font></span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-weight:bold;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></b></p></td><td width=19.9600%  valign=top  style="width:19.9600%;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:2.2500pt solid windowtext;
+mso-border-bottom-alt:2.2500pt solid windowtext;" ><p class=MsoNormal  align=center  style="text-align:center;line-height:200%;" ><b><span style="font-family:宋体;mso-ascii-font-family:'Times New Roman';mso-hansi-font-family:'Times New Roman';
+mso-bidi-font-family:'Times New Roman';line-height:200%;font-weight:bold;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><font face="Times New Roman" >96.8</font></span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:宋体;font-weight:bold;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></b></p></td></tr></table><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:宋体;
+font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body>
 
 
 
