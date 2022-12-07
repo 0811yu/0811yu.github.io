@@ -783,7 +783,7 @@ mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.00
 mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr></table><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:宋体;
 font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body></html>
 
-### Figure 1. The experimental results obtained after 100 iterations using the improved network model on the AIZOO dataset
+### The experimental results obtained after 100 iterations using the improved network model on the AIZOO dataset
 <div>
 <p><img class="wide" src="./COCO - Common Objects in Context_files/result.png"></p>
 Figure 1. Training results of our improved model on the AIZOO face mask dataset. (a-c) and (f-h) correspondingly show the box loss, object loss and classification loss during the training and validation procedures. (d) and (e) are the precision and recall of the model, respectively. (i) and (j) show the mAP at IoU=0.5 and IoU=0.5:0.9, respectively. The x-axis represents the training epochs.
