@@ -1970,6 +1970,11 @@ mso-bidi-font-family:'Times New Roman';line-height:200%;font-size:9.0000pt;
 mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr></table><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:宋体;
 font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body></html>
 
+### Test
+<div>
+<p><img class="wide" src="./COCO - Common Objects in Context_files/photo.gif"></p>
+</div>
+
  
 
 
