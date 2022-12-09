@@ -1971,6 +1971,7 @@ mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p></td></tr></table><p class=Ms
 font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment--></body></html>
 
 ### Test
+We tested the detection ability of our proposed improved model outdoors 
 <div>
 <p><img class="wide" src="./COCO - Common Objects in Context_files/photo.gif"></p>
 </div>
