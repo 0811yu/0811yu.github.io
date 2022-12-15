@@ -1977,7 +1977,7 @@ We tested the detection ability of our proposed improved model outdoors
 </div>
 We also tested the flow of people on campus
 <div>
-<p><img class="wide" src="./COCO - Common Objects in Context_files/photo.gif"></p>
+<p><img class="wide" src="./COCO - Common Objects in Context_files/11.gif"></p>
 </div>
 At this time, the camera is exposed to strong light, and the effect of pedestrian flow detection is relatively satisfactory. The edge computer we use is the Jeston nano TX1, which is an entry-level edge computer. It will have better effect on industrial edge computers.
  
